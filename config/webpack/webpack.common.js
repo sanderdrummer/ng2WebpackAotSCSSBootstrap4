@@ -68,12 +68,6 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.ProvidePlugin({
-            jQuery: 'jquery',
-            $: 'jquery',
-            jquery: 'jquery'
-        }),
-
         new webpack.DefinePlugin({
             'process.env': envMap
         }),
@@ -97,10 +91,9 @@ module.exports = {
             options: {
                 tslint: {
                     emitError: true,
-                    failOnHint: true
+                    failOnHint: false
                 }
             }
         })
     ]
-
 };

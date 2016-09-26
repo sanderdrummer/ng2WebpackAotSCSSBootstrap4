@@ -1,4 +1,15 @@
-<as-navbar [brand]="appBrand"></as-navbar>
-<div class="container" style="margin-top: 100px;">
-	<router-outlet></router-outlet>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-5">
+            <h1>Test</h1>
+        </div>
+        <div class="col-xs">breit</div>
+        <div class="col-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi autem dicta, fuga natus odio quae. Exercitationem incidunt molestias, nesciunt, quae recusandae rem repellendus sed tempore ut velit vero voluptatum?</div>
+        <div class="col-xs">breit</div>
+    </div>
 </div>
+<nav>
+    <a routerLink="/" routerLinkActive="active">Crisis Center</a>
+    <a routerLink="/list" routerLinkActive="active">Heroes</a>
+</nav>
+<router-outlet></router-outlet>

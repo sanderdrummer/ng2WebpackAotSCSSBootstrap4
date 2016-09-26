@@ -3,21 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { appRoutingProviders, routing } from './app.routing';
-import { NavbarModule } from './shared';
-import { HomeModule } from './home/home.module';
+import { ListComponent } from './lists/list/list.component';
+import { ListsComponent } from './lists/lists.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        ListsComponent,
+        ListComponent,
     ],
     imports: [
         BrowserModule,
-        NavbarModule,
-        HomeModule,
         routing
     ],
     providers: [ appRoutingProviders ],
     bootstrap: [ AppComponent ]
 })
-export class AppModule {
-}
+export class AppModule {}
