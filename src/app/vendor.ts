@@ -10,4 +10,4 @@ import '@angular/router';
 // import 'rxjs';
 
 import 'font-awesome/css/font-awesome.css';
-import '../public/styles/main.scss';
+import '../main.scss';
