@@ -4,10 +4,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'as-lazy-module-child',
-    template: 'child A'
+    selector: 'as-lazy-module-child-b',
+    template: 'child B'
 })
-export class LazyModuleChildComponent implements OnInit {
+export class LazyModuleChildBComponent implements OnInit {
     constructor() { }
 
     ngOnInit() { }
