@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { appRoutingProviders, routing } from './app.routing';
 import { ListComponent } from './lists/list/list.component';
 import { ListsComponent } from './lists/lists.component';
+import { FeatureModuleModule } from './feature-module/feature-module.module';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { ListsComponent } from './lists/lists.component';
     ],
     imports: [
         BrowserModule,
-        routing
+        routing,
+        FeatureModuleModule.forRoot()
     ],
     providers: [ appRoutingProviders ],
     bootstrap: [ AppComponent ]

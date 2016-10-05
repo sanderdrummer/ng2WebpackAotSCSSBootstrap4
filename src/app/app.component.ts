@@ -6,7 +6,4 @@ import '../style.css';
     selector: 'as-main-app',
     templateUrl: 'app.html'
 })
-export class AppComponent {
-
-    constructor() {}
-}
+export class AppComponent {}
