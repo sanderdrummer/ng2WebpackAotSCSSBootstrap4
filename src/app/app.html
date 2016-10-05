@@ -1,20 +1,12 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-5">
-            <h1>Test</h1>
-        </div>
-        <div class="col-xs">breit</div>
-        <div class="col-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi autem dicta, fuga natus odio quae. Exercitationem incidunt molestias, nesciunt, quae recusandae rem repellendus sed tempore ut velit vero voluptatum?</div>
-        <div class="col-xs">breit</div>
+    <div>
+        <h1>Feature Module:</h1>
+        <as-feature-module></as-feature-module>
     </div>
+    <nav>
+        <a routerLink="/" routerLinkActive="active">Static</a>
+        <a routerLink="/lazy" routerLinkActive="active">Lazy</a>
+        <a routerLink="/lazy/test" routerLinkActive="active">Lazy Test</a>
+    </nav>
+    <router-outlet></router-outlet>
 </div>
-<div>
-    <h1>Feature Module:</h1>
-    <as-feature-module></as-feature-module>
-</div>
-<nav>
-    <a routerLink="/" routerLinkActive="active">Static</a>
-    <a routerLink="/lazy" routerLinkActive="active">Lazy</a>
-    <a routerLink="/lazy/test" routerLinkActive="active">Lazy Test</a>
-</nav>
-<router-outlet></router-outlet>
