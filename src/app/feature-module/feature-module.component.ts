@@ -2,6 +2,7 @@
  * Created by Tobias on 05.10.2016.
  */
 import { Component, OnInit } from '@angular/core';
+import { FeatureModuleService } from './feature-module.service';
 
 @Component({
     selector: 'as-feature-module',
@@ -9,11 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeatureModuleComponent implements OnInit {
 
-    constructor() {
+    constructor(private service: FeatureModuleService) {
         console.log('feature module');
     }
 
     ngOnInit(): void {
-        console.log('feature module init');
+        this.service.sayHello();
     }
 }
