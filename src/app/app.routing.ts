@@ -1,10 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
-import { ListComponent } from './lists/list/list.component';
-import { ListsComponent } from './lists/lists.component';
+import { FeatureModuleComponent } from './feature-module/feature-module.component';
 
 export const appRoutes: Routes = [
-    { path: '', component: ListsComponent },
-    { path: 'list', component: ListComponent },
+    { path: '', component: FeatureModuleComponent },
+    { path: 'lazy', loadChildren: './lazy-module/lazy-module.module#LazyModuleModule'},
 ];
 
 export const appRoutingProviders: any[] = [
